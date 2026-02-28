@@ -18,7 +18,7 @@ test('To be Present', async ({ page }) => {
     await expect(countButton).toHaveCount(0);
 });
 
-test.only('To be Enabled', async ({page}) =>{
+test('To be Enabled', async ({page}) =>{
     await page.goto('https://www.letskodeit.com/practice');
     await expect(page).toHaveTitle(/Practice Page/);
     const disableButton = page.locator('#disabled-button');
